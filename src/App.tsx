@@ -1,13 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+import { BottomTabsNavigation } from './navigation/BottomTabsNavigation';
 
 export const App: React.FC = () => {
   return (
     <NavigationContainer>
-      <View>
-        <Text>App text</Text>
-      </View>
+      <BottomTabsNavigation />
     </NavigationContainer>
   );
 };
