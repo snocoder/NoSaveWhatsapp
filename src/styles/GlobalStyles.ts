@@ -1,21 +1,11 @@
 import { StyleSheet } from 'react-native';
+import { COLORS } from '../theme/Colors';
 
 export const gloablStyles = StyleSheet.create({
-  // Fonts
-  regularFont: {
-    fontFamily: 'Poppins-Regular',
+  defaultBackgroundColor: {
+    backgroundColor: COLORS.WHITE,
   },
-  mediumFont: {
-    fontFamily: 'Poppins-Medium',
+  flexOne: {
+    flex: 1,
   },
-  semiBoldFont: {
-    fontFamily: 'Poppins-SemiBold',
-  },
-  boldFont: {
-    fontFamily: 'Poppins-Bold',
-  },
-  extraBoldFont: {
-    fontFamily: 'Poppins-ExtraBold',
-  },
-  //   Colors
 });

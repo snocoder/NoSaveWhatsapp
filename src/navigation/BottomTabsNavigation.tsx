@@ -1,40 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import { HomeScreen } from '../screens/Home.screen';
-import { CallLogScreen } from '../screens/CallLog.screen';
-import { gloablStyles } from '../styles/GlobalStyles';
-import { COLORS } from '../theme/colors';
+import { tabsConfig } from '../configs/TabConfig';
+import { COLORS } from '../theme/Colors';
+import { FONTS } from '../theme/Fonts';
 
 const Tab = createBottomTabNavigator();
-
-const tabsConfig = {
-  HOME: {
-    name: 'HomeScreen',
-    component: HomeScreen,
-    tabBarLabel: 'Home',
-    tabBarIcon: (focused: boolean) => (
-      <MaterialCommunityIcons
-        name="home"
-        size={20}
-        color={focused ? COLORS.coralRed : COLORS.manatee}
-      />
-    ),
-  },
-  CALL_LOG: {
-    name: 'CallLogScreen',
-    component: CallLogScreen,
-    tabBarLabel: 'Call Log',
-    tabBarIcon: (focused: boolean) => (
-      <MaterialCommunityIcons
-        name="phone-log"
-        size={20}
-        color={focused ? COLORS.coralRed : COLORS.manatee}
-      />
-    ),
-  },
-};
 
 export const BottomTabsNavigation: React.FC = () => {
   return (
@@ -42,9 +13,11 @@ export const BottomTabsNavigation: React.FC = () => {
       screenOptions={{
         headerShown: false,
         tabBarLabelPosition: 'beside-icon',
-        tabBarActiveTintColor: COLORS.coralRed,
-        tabBarInactiveTintColor: COLORS.manatee,
-        tabBarLabelStyle: gloablStyles.semiBoldFont,
+        tabBarActiveTintColor: COLORS.CORALRed,
+        tabBarInactiveTintColor: COLORS.MANATEE,
+        tabBarLabelStyle: {
+          fontFamily: FONTS.semiBoldFont,
+        },
       }}>
       <Tab.Screen
         name={tabsConfig.HOME.name}

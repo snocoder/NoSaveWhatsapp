@@ -1,7 +1,8 @@
 export const COLORS = {
-  coralRed: '#FF5A5F',
-  teal: '#00A699',
-  flame: '#FC642D',
-  charcol: '#484848',
-  manatee: '#767676',
+  CORALRed: '#FF5A5F',
+  TEAL: '#00A699',
+  FLAME: '#FC642D',
+  CHARCOL: '#484848',
+  MANATEE: '#767676',
+  WHITE: '#FFFFFF',
 };
