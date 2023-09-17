@@ -7,7 +7,7 @@ import {
 import { HomeScreen } from '../screens/Home.screen';
 import { CallLogScreen } from '../screens/CallLog.screen';
 import { COLORS } from '../theme/Colors';
-import { Button } from '../components/atoms/button/Button';
+// import { Button } from '../components/atoms/button/Button';
 
 const Stack = createStackNavigator();
 
@@ -16,19 +16,19 @@ const screenOptions: StackNavigationOptions = {
   headerStyle: {
     backgroundColor: COLORS.CORALRed,
   },
-  headerRight: () => (
-    <Button
-      icon="whatsapp"
-      text="Share"
-      onPress={() => {
-        // TODO: create a utility function to open share on whatsapp with default message
-        console.log('logging');
-      }}
-    />
-  ),
-  headerRightContainerStyle: {
-    paddingRight: 20,
-  },
+  // headerRight: () => (
+  //   <Button
+  //     icon="whatsapp"
+  //     text="Share"
+  //     onPress={() => {
+  //       // TODO: create a utility function to open share on whatsapp with default message
+  //       console.log('logging');
+  //     }}
+  //   />
+  // ),
+  // headerRightContainerStyle: {
+  //   paddingRight: 20,
+  // },
 };
 
 const HomeStack = () => (

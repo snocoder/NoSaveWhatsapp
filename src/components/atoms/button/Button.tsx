@@ -36,15 +36,19 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <Pressable onPress={onPress} style={[style.button, buttonStyle]}>
-      <View style={[style.buttonContent, buttonContentStyle]}>
-        {icon && (
-          <MaterialCommunityIcons
-            name={icon}
-            size={iconSize || 20}
-            color={iconColor || COLORS.CORALRed}
-          />
-        )}
-        <Text style={[style.text, textStyle]}>{text.toUpperCase()}</Text>
+      <View style={[style.button__buttonContent, buttonContentStyle]}>
+        <View>
+          {icon && (
+            <MaterialCommunityIcons
+              name={icon}
+              size={iconSize || 20}
+              color={iconColor || COLORS.CORALRed}
+            />
+          )}
+        </View>
+        <View>
+          <Text style={[style.text, textStyle]}>{text}</Text>
+        </View>
       </View>
     </Pressable>
   );
@@ -56,13 +60,12 @@ const style = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 7,
     borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 
-  buttonContent: {
+  button__buttonContent: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 
   text: {
