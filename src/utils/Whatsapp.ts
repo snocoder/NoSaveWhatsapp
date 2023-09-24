@@ -1,7 +1,11 @@
-import { Linking } from 'react-native';
+import { Alert, Linking } from 'react-native';
 
 const openURL = async (url: string): Promise<void> => {
-  await Linking.openURL(url);
+  try {
+    await Linking.openURL(url);
+  } catch (err: any) {
+    Alert.alert(err?.message);
+  }
 };
 
 export { openURL };

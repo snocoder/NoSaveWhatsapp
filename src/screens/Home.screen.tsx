@@ -41,6 +41,7 @@ export const HomeScreen: React.FC = () => {
     <SafeAreaView
       style={[
         gloablStyles.defaultBackgroundColor,
+        gloablStyles.screenPaddingHorizontal,
         gloablStyles.flexOne,
         styles.container,
       ]}>
@@ -146,7 +147,7 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: COLORS.WHITE,
-    width: '96%',
+    width: '100%',
     paddingHorizontal: 10,
     paddingVertical: 20,
     borderRadius: 5,

@@ -6,6 +6,9 @@ export const gloablStyles = StyleSheet.create({
   defaultBackgroundColor: {
     backgroundColor: COLORS.WHITE,
   },
+  screenPaddingHorizontal: {
+    paddingHorizontal: 20,
+  },
   flexOne: {
     flex: 1,
   },
