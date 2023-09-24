@@ -1,4 +1,4 @@
-package com.nosavewhatsapp;
+package com.snocoder.whatsAppshortcut;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

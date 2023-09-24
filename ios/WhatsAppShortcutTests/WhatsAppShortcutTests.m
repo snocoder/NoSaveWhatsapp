@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface NoSaveWhatsappTests : XCTestCase
+@interface WhatsAppShortcutTests : XCTestCase
 
 @end
 
-@implementation NoSaveWhatsappTests
+@implementation WhatsAppShortcutTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

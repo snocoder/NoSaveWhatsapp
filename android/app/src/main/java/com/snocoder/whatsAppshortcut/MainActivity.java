@@ -1,4 +1,4 @@
-package com.nosavewhatsapp;
+package com.snocoder.whatsAppshortcut;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
@@ -16,7 +16,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "NoSaveWhatsapp";
+    return "WhatsApp Shortcut";
   }
 
   /**
